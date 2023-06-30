@@ -6,23 +6,20 @@ int main()
 {
 	int a = 6, b = 4;
 
-	// Binary AND operator
-	cout << "a & b is " << (a & b) << endl;
+	// Assignment Operator
+	cout << "a = " << a << endl;
 
-	// Binary OR operator
-	cout << "a | b is " << (a | b) << endl;
+	// Add and Assignment Operator
+	cout << "a += b is " << (a += b) << endl;
 
-	// Binary XOR operator
-	cout << "a ^ b is " << (a ^ b) << endl;
+	// Subtract and Assignment Operator
+	cout << "a -= b is " << (a -= b) << endl;
 
-	// Left Shift operator
-	cout << "a<<1 is " << (a << 1) << endl;
+	// Multiply and Assignment Operator
+	cout << "a *= b is " << (a *= b) << endl;
 
-	// Right Shift operator
-	cout << "a>>1 is " << (a >> 1) << endl;
-
-	// One’s Complement operator
-	cout << "~(a) is " << ~(a) << endl;
+	// Divide and Assignment Operator
+	cout << "a /= b is " << (a /= b) << endl;
 
 	return 0;
 }
