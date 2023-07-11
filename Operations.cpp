@@ -4,22 +4,16 @@ using namespace std;
 
 int main()
 {
-	int a = 8, b = 3;
+	int a = 6, b = 4;
 
-	// Addition operator
-	cout << "a + b = " << (a + b) << endl;
+	// Logical AND operator
+	cout << "a && b is " << (a && b) << endl;
 
-	// Subtraction operator
-	cout << "a - b = " << (a - b) << endl;
+	// Logical OR operator
+	cout << "a ! b is " << (a > b) << endl;
 
-	// Multiplication operator
-	cout << "a * b = " << (a * b) << endl;
-
-	// Division operator
-	cout << "a / b = " << (a / b) << endl;
-
-	// Modulo operator
-	cout << "a % b = " << (a % b) << endl;
+	// Logical NOT operator
+	cout << "!b is " << (!b) << endl;
 
 	return 0;
 }
