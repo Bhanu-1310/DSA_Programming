@@ -1,13 +1,19 @@
 
+
 #include <iostream>
 using namespace std;
 
 int main()
 {
 
-	int a = 5;
+	int a = 10;
 	int b = 5;
-	cout << "Pre-Decrementing a = " << --a << endl;
-	cout << "Post-Decrementing b = " << b-- << endl;
+
+	if (!(a > b))
+		cout << "b is greater than a" << endl;
+	else
+		cout << "a is greater than b" << endl;
+
 	return 0;
 }
+
