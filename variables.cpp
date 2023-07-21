@@ -1,29 +1,12 @@
+#include <iostream> 
+using namespace std; 
 
-#include <iostream>
-using namespace std;
+int main() 
+{ 
+	// Real literal 
+	const float floatVal = 4.14; 
 
-void autoStorageClass()
-{
-
-	cout << "Demonstrating auto class\n";
-
-	int a = 32;
-	float b = 3.2;
-	char* c = "for";
-	char d = 'G';
-
-	cout << a << " \n";
-	cout << b << " \n";
-	cout << c << " \n";
-	cout << d << " \n";
-}
-
-int main()
-{
-
-	// To demonstrate auto Storage Class
-	autoStorageClass();
-
-	return 0;
-}
-
+	cout << "Floating-point literal: "
+		<< floatVal << "\n"; 
+	return 0; 
+} 
