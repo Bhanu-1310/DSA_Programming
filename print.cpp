@@ -4,6 +4,5 @@ using namespace std;
 int main(){
      int geek = 1;
  
-    cout << "Identifier result is: "
-         << geek;
+    cout << "Identifier result is: " << geek;
 }
