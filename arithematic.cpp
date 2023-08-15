@@ -1,12 +1,20 @@
-
 #include <bits/stdc++.h>
 using namespace std;
 
-int main()
-{
-	char ch = 65;
-	cout << ch << endl;
-	cout << ch + 0 << endl;
-	cout << char(ch + 32) << endl;
+// driver code
+int main(){
+	char value1 = 'a';
+	char value2 = 'b';
+	char value3 = 'z';
+
+	// perform character arithmetic
+	char num1 = value1 + 3;
+	char num2 = value2 - 1;
+	char num3 = value3 + 2;
+
+	// print value
+	cout<<"numerical value = "<<(int)num1<<endl;
+	cout<<"numerical value = "<<(int)num2<<endl;
+	cout<<"numerical value = "<<(int)num3<<endl;
 	return 0;
 }
