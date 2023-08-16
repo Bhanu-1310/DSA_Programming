@@ -1,24 +1,59 @@
 
 #include <iostream> 
-#include <typeinfo> 
 using namespace std; 
+
+// Base Class 
+class Animal { 
+public: 
+	virtual void speak() const
+	{ 
+		cout << "Animal speaks." << endl; 
+	} 
+}; 
+
+// Derived Class 
+class Dog : public Animal { 
+public: 
+	void speak() const override 
+	{ 
+		cout << "Dog barks." << endl; 
+	} 
+}; 
+
+// Derived Class 
+class Cat : public Animal { 
+public: 
+	void speak() const override 
+	{ 
+		cout << "Cat meows." << endl; 
+	} 
+}; 
 
 int main() 
 { 
+	// base class pointer to derived class object 
+	Animal* animalPtr = new Dog(); 
 
-	int num = 10; 
+	// downcasting 
+	Dog* dogPtr = dynamic_cast<Dog*>(animalPtr); 
 
-	// converting int to double 
-	double numDouble = static_cast<double>(num); 
+	// checking if the typecasting is successfull 
+	if (dogPtr) { 
+		dogPtr->speak(); 
+	} 
+	else { 
+		cout << "Failed to cast to Dog." << endl; 
+	} 
 
-	// printing data type 
-	cout << typeid(num).name() << endl; 
+	// typecasting to other dervied class 
+	Cat* catPtr = dynamic_cast<Cat*>(animalPtr); 
+	if (catPtr) { 
+		catPtr->speak(); 
+	} 
+	else { 
+		cout << "Failed to cast to Cat." << endl; 
+	} 
 
-	// typecasting 
-	cout << typeid(static_cast<double>(num)).name() << endl; 
-
-	// printing double type t 
-	cout << typeid(numDouble).name() << endl; 
-
+	delete animalPtr; 
 	return 0; 
 }
