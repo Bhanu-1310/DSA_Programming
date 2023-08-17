@@ -1,11 +1,16 @@
-#include <stdio.h> 
+
+#include <iostream> 
+using namespace std; 
 
 int main() 
 { 
-	// constant char literal 
-	const char charVal = 'A'; 
+	const bool isTrue = true; 
+	const bool isFalse = false; 
 
-	printf("Character Literal: %c\n", 
-		charVal); 
+	cout << "isTrue? "
+		<< isTrue << "\n"; 
+	cout << "isFalse? "
+		<< isFalse << "\n"; 
+
 	return 0; 
 } 
