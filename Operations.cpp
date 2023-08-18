@@ -1,19 +1,11 @@
 
-
 #include <iostream>
 using namespace std;
 
 int main()
 {
-
-	int a = 10;
-	int b = 5;
-
-	if (!(a > b))
-		cout << "b is greater than a" << endl;
-	else
-		cout << "a is greater than b" << endl;
+	cout << "Size of double: " << sizeof(double) << endl;
+	cout << "Size of int: " << sizeof(int) << endl;
 
 	return 0;
 }
-
