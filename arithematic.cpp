@@ -1,11 +1,12 @@
 
-#include <stdio.h>
+#include <bits/stdc++.h>
+using namespace std;
 
 int main()
 {
-	char ch1 = 125, ch2 = 10;
-	ch1 = ch1 + ch2;
-	printf("%d\n", ch1);
-	printf("%c\n", ch1 - ch2 - 4);
+	char ch = 65;
+	cout << ch << endl;
+	cout << ch + 0 << endl;
+	cout << char(ch + 32) << endl;
 	return 0;
 }
