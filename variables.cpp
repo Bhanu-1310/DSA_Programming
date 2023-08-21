@@ -1,12 +1,11 @@
-#include <iostream> 
-using namespace std; 
+#include <stdio.h> 
 
 int main() 
 { 
-	// Real literal 
-	const float floatVal = 4.14; 
+	// constant char literal 
+	const char charVal = 'A'; 
 
-	cout << "Floating-point literal: "
-		<< floatVal << "\n"; 
+	printf("Character Literal: %c\n", 
+		charVal); 
 	return 0; 
 } 
