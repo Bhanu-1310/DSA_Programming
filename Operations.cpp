@@ -4,22 +4,17 @@ using namespace std;
 
 int main()
 {
-	int a = 6, b = 4;
+	int a = 6;
+	int* b;
+	int c;
+	// & Operator
+	b = &a;
 
-	// Assignment Operator
-	cout << "a = " << a << endl;
-
-	// Add and Assignment Operator
-	cout << "a += b is " << (a += b) << endl;
-
-	// Subtract and Assignment Operator
-	cout << "a -= b is " << (a -= b) << endl;
-
-	// Multiply and Assignment Operator
-	cout << "a *= b is " << (a *= b) << endl;
-
-	// Divide and Assignment Operator
-	cout << "a /= b is " << (a /= b) << endl;
+	// * Operator
+	c = *b;
+	cout << " a = " << a << endl;
+	cout << " b = " << b << endl;
+	cout << " c = " << c << endl;
 
 	return 0;
 }
