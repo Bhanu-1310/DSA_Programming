@@ -1,20 +1,15 @@
 
+
 #include <iostream>
 using namespace std;
 
 int main()
 {
-	int a = 6;
-	int* b;
-	int c;
-	// & Operator
-	b = &a;
+	int positiveInteger = 100;
+	int negativeInteger = -positiveInteger;
 
-	// * Operator
-	c = *b;
-	cout << " a = " << a << endl;
-	cout << " b = " << b << endl;
-	cout << " c = " << c << endl;
+	cout << "Positive Integer: " << positiveInteger << endl;
+	cout << "Negative Integer: " << negativeInteger << endl;
 
 	return 0;
 }
