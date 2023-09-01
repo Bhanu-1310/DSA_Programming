@@ -3,8 +3,9 @@ using namespace std;
 
 int main() {
 
-	int x = 19;
-	cout<<"x << 1 = "<< (x << 1) <<endl;
-	cout<<"x >> 1 = "<< (x >> 1) <<endl;
+	unsigned int x = 1;
+	signed int a = 1;
+	cout<<"Signed Result "<< ~a <<endl ;
+	cout<<"Unsigned Result "<< ~x ;
 	return 0;
 }
