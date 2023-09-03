@@ -1,11 +1,13 @@
-#include <iostream>
+
+#include<iostream> 
 using namespace std;
 
-int main() {
+int x; // Global x
 
-	unsigned int x = 1;
-	signed int a = 1;
-	cout<<"Signed Result "<< ~a <<endl ;
-	cout<<"Unsigned Result "<< ~x ;
-	return 0;
+int main()
+{
+int x = 10; // Local x
+cout << "Value of global x is " << ::x;
+cout << "\nValue of local x is " << x; 
+return 0;
 }
