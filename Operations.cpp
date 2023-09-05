@@ -1,13 +1,36 @@
 
-#include<iostream> 
+#include<iostream>
 using namespace std;
 
-int x; // Global x
+class A
+{
+protected:
+	int x;
+public:
+	A() { x = 10; }
+};
+
+class B
+{
+protected:
+	int x;
+public:
+	B() { x = 20; }
+};
+
+class C: public A, public B
+{
+public:
+void fun()
+{
+	cout << "A's x is " << A::x;
+	cout << "\nB's x is " << B::x;
+}
+};
 
 int main()
 {
-int x = 10; // Local x
-cout << "Value of global x is " << ::x;
-cout << "\nValue of local x is " << x; 
-return 0;
+	C c;
+	c.fun();
+	return 0;
 }
