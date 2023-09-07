@@ -1,36 +1,21 @@
 
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-class A
-{
-protected:
+class outside {
+public:
 	int x;
-public:
-	A() { x = 10; }
+	class inside {
+	public:
+		int x;
+		static int y;
+		int foo();
+	};
 };
-
-class B
-{
-protected:
-	int x;
-public:
-	B() { x = 20; }
-};
-
-class C: public A, public B
-{
-public:
-void fun()
-{
-	cout << "A's x is " << A::x;
-	cout << "\nB's x is " << B::x;
-}
-};
+int outside::inside::y = 5;
 
 int main()
 {
-	C c;
-	c.fun();
-	return 0;
+	outside A;
+	outside::inside B;
 }
