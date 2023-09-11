@@ -1,21 +1,23 @@
+// Example:
 
-#include <iostream>
+#include <iostream> 
+#include <iomanip> 
+
 using namespace std;
-
-class outside {
-public:
-	int x;
-	class inside {
-	public:
-		int x;
-		static int y;
-		int foo();
-	};
-};
-int outside::inside::y = 5;
-
-int main()
+main()
 {
-	outside A;
-	outside::inside B;
+
+int number = 100; 
+
+cout << "Hex Value =" << " " << hex << number << endl; 
+
+cout << "Octal Value=" << " " << oct << number << endl; 
+
+cout << "Setbase Value=" << " " << setbase(8) << number << endl; 
+
+cout << "Setbase Value=" << " " << setbase(16) << number << endl; 
+
+
+return 0;
+
 }
