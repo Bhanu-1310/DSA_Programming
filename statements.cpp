@@ -1,23 +1,16 @@
-// Example:
 
-#include <iostream> 
-#include <iomanip> 
-
+#include <iostream>
 using namespace std;
-main()
+
+// Driver Code
+int main()
 {
+	for (int i = 1; i < 10; i++) {
 
-int number = 100; 
-
-cout << "Hex Value =" << " " << hex << number << endl; 
-
-cout << "Octal Value=" << " " << oct << number << endl; 
-
-cout << "Setbase Value=" << " " << setbase(8) << number << endl; 
-
-cout << "Setbase Value=" << " " << setbase(16) << number << endl; 
-
-
-return 0;
-
+		// Breaking Condition
+		if (i == 5)
+			break;
+		cout << i << " ";
+	}
+	return 0;
 }
