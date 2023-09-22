@@ -1,27 +1,23 @@
+// C++ program to illustrate do-while loop 
 
-#include <iostream>
-#include <vector>
-using namespace std;
+#include <iostream> 
+using namespace std; 
 
-int main()
-{
-	cout << "Array Values are: " << endl;
-	int arr[] = { 0, 1, 2, 3, 4, 5 };
+int main() 
+{ 
+	// Initialization expression 
+	int i = 1; 
 
-	// using range based for loop for iterating array
-	for (int x : arr) {
-		cout << x << " ";
-	}
-	cout << endl;
+	do { 
+		// Loop body 
+		cout << i << endl; 
 
-	cout << "Vector Values are: " << endl;
-	vector<int> v = { 0, 1, 2, 3, 4, 5 };
+		// Update expression 
+		i++; 
 
-	// using range-based for loop for iterating over vector
-	for (auto x : v) {
-		cout << x << " ";
-	}
-	cout << endl;
+	} 
+	// Test expression 
+	while (i <= 5); 
 
-	return 0;
+	return 0; 
 }
