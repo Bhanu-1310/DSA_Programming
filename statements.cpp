@@ -2,15 +2,27 @@
 #include <iostream>
 using namespace std;
 
+void findGreater(int x, int y)
+{
+	if (x > y) {
+		cout << x << " "
+			<< "is greater"
+			<< "\n";
+		return;
+	}
+	else {
+		cout << y << " "
+			<< "is greater"
+			<< "\n";
+		return;
+	}
+}
+
 // Driver Code
 int main()
 {
-	for (int i = 1; i < 10; i++) {
+	// Function Call
+	findGreater(10, 20);
 
-		// Breaking Condition
-		if (i == 5)
-			break;
-		cout << i << " ";
-	}
 	return 0;
 }
